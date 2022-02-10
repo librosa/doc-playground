@@ -1,86 +1,44 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Using display.specshow &mdash; librosa 0.9.0 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/sg_gallery-binder.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/sg_gallery-dataframe.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/sg_gallery-rendered-html.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Example files" href="../recordings.html" />
     <link rel="prev" title="Laplacian segmentation" href="plot_segmentation.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: white" >
-          
-
-          
             <a href="../index.html">
-          
-
-          
-            
             <img src="../_static/librosa_logo_text.svg" class="logo" alt="Logo"/>
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 0.9.0
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -88,18 +46,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installation instructions</a></li>
@@ -135,79 +82,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">librosa</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="../advanced.html">Advanced examples</a> &raquo;</li>
-        
       <li>Using display.specshow</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/auto_examples/plot_display.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="sphx-glr-download-link-note admonition note">
 <p class="admonition-title">Note</p>
 <p>Click <a class="reference internal" href="#sphx-glr-download-auto-examples-plot-display-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<div class="sphx-glr-example-title section" id="using-display-specshow">
+<section class="sphx-glr-example-title" id="using-display-specshow">
 <span id="sphx-glr-auto-examples-plot-display-py"></span><h1>Using display.specshow<a class="headerlink" href="#using-display-specshow" title="Permalink to this headline">¶</a></h1>
 <p>This notebook gives a more in-depth demonstration of all things that <em class="xref py py-obj">specshow</em>
 can do to help generate beautiful visualizations of spectro-temporal data.</p>
@@ -261,7 +166,7 @@ to be quicker to learn, but the object-oriented interface can
 be a little more flexible for complex figures.</p>
 <p>For the remainder of this example, we’ll use the object-oriented
 interface.</p>
-<div class="section" id="decorating-your-plot">
+<section id="decorating-your-plot">
 <h2>Decorating your plot<a class="headerlink" href="#decorating-your-plot" title="Permalink to this headline">¶</a></h2>
 <p>The figure above conveys the basic content of the spectrogram,
 but it’s missing axis labels. Without that information, it’s
@@ -279,8 +184,8 @@ We can tell specshow to decorate the axes accordingly:</p>
 </div>
 <img src="../_images/sphx_glr_plot_display_003.png" srcset="../_images/sphx_glr_plot_display_003.png" alt="Now with labeled axes!" class = "sphx-glr-single-img"/><p>This is much better already!  Note that we also added a format string
 to the colorbar, so readers know how to read the color scale.</p>
-</div>
-<div class="section" id="changing-axis-scales">
+</section>
+<section id="changing-axis-scales">
 <h2>Changing axis scales<a class="headerlink" href="#changing-axis-scales" title="Permalink to this headline">¶</a></h2>
 <p>The linear frequency scale is sometimes helpful, but often it can
 difficult to read.  Alternatively, it is common to use a logarithmic
@@ -293,8 +198,8 @@ a constant vertical extent.</p>
 <a href="https://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure.colorbar" title="matplotlib.figure.Figure.colorbar" class="sphx-glr-backref-module-matplotlib-figure sphx-glr-backref-type-py-method"><span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span></a><span class="p">(</span><a href="https://matplotlib.org/api/collections_api.html#matplotlib.collections.QuadMesh" title="matplotlib.collections.QuadMesh" class="sphx-glr-backref-module-matplotlib-collections sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">img</span></a><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;%+2.f dB&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_plot_display_004.png" srcset="../_images/sphx_glr_plot_display_004.png" alt="Using a logarithmic frequency axis" class = "sphx-glr-single-img"/></div>
-<div class="section" id="changing-the-analysis-parameters">
+<img src="../_images/sphx_glr_plot_display_004.png" srcset="../_images/sphx_glr_plot_display_004.png" alt="Using a logarithmic frequency axis" class = "sphx-glr-single-img"/></section>
+<section id="changing-the-analysis-parameters">
 <h2>Changing the analysis parameters<a class="headerlink" href="#changing-the-analysis-parameters" title="Permalink to this headline">¶</a></h2>
 <p>The default parameter settings used by librosa (e.g., <em class="xref py py-obj">sr=22050</em>, <em class="xref py py-obj">hop_length=512</em>,
 etc) may not be appropriate for every signal.
@@ -315,8 +220,8 @@ This ensures that axis scales (e.g. time or frequency) are computed correctly.</
 translate frame indices to time indices.</p>
 <p>A full list of the supported parameters is provided in the
 <a class="reference internal" href="../generated/librosa.display.specshow.html#librosa.display.specshow" title="librosa.display.specshow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">librosa.display.specshow</span></code></a> documentation.</p>
-</div>
-<div class="section" id="other-types-of-spectral-data">
+</section>
+<section id="other-types-of-spectral-data">
 <h2>Other types of spectral data<a class="headerlink" href="#other-types-of-spectral-data" title="Permalink to this headline">¶</a></h2>
 <p>The examples above illustrate how to plot linear spectrograms,
 but librosa provides many kinds of spectral representations:
@@ -372,8 +277,8 @@ pass this to specshow and it will spell the notes properly:</p>
 </pre></div>
 </div>
 <img src="../_images/sphx_glr_plot_display_010.png" srcset="../_images/sphx_glr_plot_display_010.png" alt="Chromagram explicitly in Eb:maj" class = "sphx-glr-single-img"/><p>This will also work for ‘cqt_note’ mode.</p>
-</div>
-<div class="section" id="indian-notation-systems">
+</section>
+<section id="indian-notation-systems">
 <h2>Indian notation systems<a class="headerlink" href="#indian-notation-systems" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># The examples above use Western music notation to identify pitch classes, but we can</span>
 <span class="c1"># also decorate axes with either Hindustani or Carnatic svara classes.</span>
@@ -425,8 +330,8 @@ so we’ll zoom into a single octave for this example.</p>
 <li><img src="../_images/sphx_glr_plot_display_013.png" srcset="../_images/sphx_glr_plot_display_013.png" alt="Hindustani decoration" class = "sphx-glr-multi-img"/></li>
 <li><img src="../_images/sphx_glr_plot_display_014.png" srcset="../_images/sphx_glr_plot_display_014.png" alt="Carnatic decoration" class = "sphx-glr-multi-img"/></li>
 </ul>
-</div>
-<div class="section" id="non-spectral-data">
+</section>
+<section id="non-spectral-data">
 <h2>Non-spectral data<a class="headerlink" href="#non-spectral-data" title="Permalink to this headline">¶</a></h2>
 <p>specshow can also be used for data that isn’t exactly spectro-temporal.
 One common application is recurrence (self-similarity) plots, which
@@ -452,8 +357,8 @@ chroma decorations on each axis:</p>
 </div>
 <img src="../_images/sphx_glr_plot_display_016.png" srcset="../_images/sphx_glr_plot_display_016.png" alt="Chroma covariance" class = "sphx-glr-single-img"/><p>Certain plots (e.g. covariance, self-similarity) are automatically
 squared by <em class="xref py py-obj">specshow</em>. To override that, pass <em class="xref py py-obj">auto_scale=False</em>.</p>
-</div>
-<div class="section" id="color-maps">
+</section>
+<section id="color-maps">
 <h2>Color maps<a class="headerlink" href="#color-maps" title="Permalink to this headline">¶</a></h2>
 <p>You may have noticed that the color mappings for the images above
 were selected automatically by <em class="xref py py-obj">specshow</em>.
@@ -491,8 +396,8 @@ reference point).</p>
 <a href="https://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure.colorbar" title="matplotlib.figure.Figure.colorbar" class="sphx-glr-backref-module-matplotlib-figure sphx-glr-backref-type-py-method"><span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span></a><span class="p">(</span><a href="https://matplotlib.org/api/collections_api.html#matplotlib.collections.QuadMesh" title="matplotlib.collections.QuadMesh" class="sphx-glr-backref-module-matplotlib-collections sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">img</span></a><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_plot_display_018.png" srcset="../_images/sphx_glr_plot_display_018.png" alt="Chroma covariance" class = "sphx-glr-single-img"/></div>
-<div class="section" id="multiple-plots">
+<img src="../_images/sphx_glr_plot_display_018.png" srcset="../_images/sphx_glr_plot_display_018.png" alt="Chroma covariance" class = "sphx-glr-single-img"/></section>
+<section id="multiple-plots">
 <h2>Multiple plots<a class="headerlink" href="#multiple-plots" title="Permalink to this headline">¶</a></h2>
 <p>Often, we’ll want to show multiple synchronized features simultaneously.
 This can be done using matplotlib’s <em class="xref py py-obj">subplot</em> mechanism and sharing axes.
@@ -529,8 +434,8 @@ here we’ll go through it step by step.</p>
 <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlim</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>  <span class="c1"># Zoom to seconds 1-3</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_plot_display_019.png" srcset="../_images/sphx_glr_plot_display_019.png" alt="STFT (log scale), Mel, Chroma" class = "sphx-glr-single-img"/></div>
-<div class="section" id="non-uniform-axes">
+<img src="../_images/sphx_glr_plot_display_019.png" srcset="../_images/sphx_glr_plot_display_019.png" alt="STFT (log scale), Mel, Chroma" class = "sphx-glr-single-img"/></section>
+<section id="non-uniform-axes">
 <h2>Non-uniform axes<a class="headerlink" href="#non-uniform-axes" title="Permalink to this headline">¶</a></h2>
 <p>All of the examples so far have used either uniformly, linearly, or geometrically
 spaced axes.  But sometimes, we have non-uniform sampling of data, and we’d like
@@ -574,8 +479,8 @@ below.</p>
 <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlim</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">25</span><span class="p">])</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_plot_display_020.png" srcset="../_images/sphx_glr_plot_display_020.png" alt="Uniform time sampling, Beat-synchronous sampling" class = "sphx-glr-single-img"/></div>
-<div class="section" id="conclusion">
+<img src="../_images/sphx_glr_plot_display_020.png" srcset="../_images/sphx_glr_plot_display_020.png" alt="Uniform time sampling, Beat-synchronous sampling" class = "sphx-glr-single-img"/></section>
+<section id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
 <p>This series of examples demonstrates most of the functionality of
 <a class="reference internal" href="../generated/librosa.display.specshow.html#librosa.display.specshow" title="librosa.display.specshow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">librosa.display.specshow</span></code></a>, but it does not exhaustively show
@@ -583,7 +488,7 @@ every option, e.g., for axis decoration.
 Interested readers should look through the rest of the API
 documentation to see how these other options can be used
 effectively.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  9.733 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  9.626 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-plot-display-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/9930a2392c024a40649d5e1796d7c8a7/plot_display.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_display.py</span></code></a></p>
@@ -593,42 +498,32 @@ effectively.</p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../recordings.html" class="btn btn-neutral float-right" title="Example files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="plot_segmentation.html" class="btn btn-neutral float-left" title="Laplacian segmentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../recordings.html" class="btn btn-neutral float-right" title="Example files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2013--2022, librosa development team.
-
-    </p>
+    <p>&#169; Copyright 2013--2022, librosa development team.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
   
 
@@ -644,31 +539,22 @@ effectively.</p>
       <dd><a href="plot_display.html">0.9.0</a></dd>
     </dl>
   </div>
-</div>
-
-  <script type="text/javascript">
+</div><script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171031946-1"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-171031946-1', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-   
+      gtag('config', 'UA-171031946-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
 
 </body>
 </html>
