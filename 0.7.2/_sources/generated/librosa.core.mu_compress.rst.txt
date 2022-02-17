@@ -1,6 +1,0 @@
-﻿librosa.core.mu\_compress
-=========================
-
-.. currentmodule:: librosa.core
-
-.. autofunction:: mu_compress
