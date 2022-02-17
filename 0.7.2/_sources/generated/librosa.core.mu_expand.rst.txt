@@ -1,0 +1,6 @@
+﻿librosa.core.mu\_expand
+=======================
+
+.. currentmodule:: librosa.core
+
+.. autofunction:: mu_expand
